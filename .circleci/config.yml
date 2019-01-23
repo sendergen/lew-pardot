@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    machine: 
     steps:
       - checkout # check out the code in the project directory
       - run: npm run lint
