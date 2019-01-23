@@ -4,6 +4,8 @@
 
 This is a node client wrapper for v3 of the Pardot API.
 
+This project was forked from https://github.com/micahlmartin/pardot
+
 ## Table of Contents
 
 - [Installation](#installation)
