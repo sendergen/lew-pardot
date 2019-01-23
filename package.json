@@ -13,7 +13,9 @@
   },
   "keywords": [
     "pardot",
-    "api"
+    "api",
+    "node",
+    "pardot-v4"
   ],
   "author": "",
   "license": "ISC",
