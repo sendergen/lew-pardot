@@ -1,7 +1,7 @@
 {
-  "name": "pardot",
-  "version": "0.0.6",
-  "description": "A pardot API client",
+  "name": "lew-pardot",
+  "version": "0.0.1",
+  "description": "A pardot API client forked from micahlmartin/pardot",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/lab/bin/lab",
