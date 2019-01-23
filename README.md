@@ -1,6 +1,6 @@
 # Pardot API Client
 
-[![Circle CI](https://circleci.com/gh/micahlmartin/pardot/tree/master.svg?style=svg)](https://circleci.com/gh/micahlmartin/pardot/tree/master)
+[![Circle CI](https://circleci.com/gh/lewsegadilha/lew-pardot/tree/master.svg?style=svg)](https://circleci.com/gh/lewsegadilha/lew-pardot/tree/master)
 
 This is a node client wrapper for v3 of the Pardot API.
 
