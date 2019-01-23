@@ -1,8 +1,13 @@
 version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:8.9.1
+
 jobs:
   build:
-    docker:
-      - image: circleci/node:latest
+    <<: *defaults  
     steps:
       - checkout
       - restore_cache: 
@@ -21,6 +26,7 @@ jobs:
           root: ~/repo
           paths: .
   deploy:
+    <<: *defaults
     steps:
       - attach_workspace:
           at: ~/repo
