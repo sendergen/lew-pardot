@@ -15,7 +15,8 @@
     "pardot",
     "api",
     "node",
-    "pardot-v4"
+    "pardot-v4",
+    "v4"
   ],
   "author": "",
   "license": "ISC",

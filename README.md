@@ -2,7 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/lewsegadilha/lew-pardot/tree/master.svg?style=svg)](https://circleci.com/gh/lewsegadilha/lew-pardot/tree/master)
 
-This is a node client wrapper for v3 of the Pardot API.
+This is a node client wrapper for v4 (migration) of the Pardot API.
 
 This project was forked from https://github.com/micahlmartin/pardot
 
@@ -69,7 +69,7 @@ All methods return a [Q promise](http://documentup.com/kriskowal/q/).
     
 ### Campaigns
 
-http://developer.pardot.com/kb/api-version-3/campaigns/
+http://developer.pardot.com/kb/api-version-4/campaigns/
 
 Accessed via `client.campaigns`.
 
@@ -83,7 +83,7 @@ create: function(params)
 
 ###  Custom Fields
 
-http://developer.pardot.com/kb/api-version-3/custom-fields/
+http://developer.pardot.com/kb/api-version-4/custom-fields/
 
 Accessed via `client.customFields`.
 
@@ -98,7 +98,7 @@ delete: function(id);
 
 ### Custom Redirects
 
-http://developer.pardot.com/kb/api-version-3/custom-redirects/
+http://developer.pardot.com/kb/api-version-4/custom-redirects/
 
 Accessed via `client.customRedirects`.
 
@@ -110,7 +110,7 @@ read: function(id);
 
 ### Dynamic Content
 
-http://developer.pardot.com/kb/api-version-3/dynamic-content/
+http://developer.pardot.com/kb/api-version-4/dynamic-content/
 
 Accessed via `client.dynamicContent`.
 
@@ -122,7 +122,7 @@ read: function(id);
 
 ### Email
 
-http://developer.pardot.com/kb/api-version-3/emails/
+http://developer.pardot.com/kb/api-version-4/emails/
 
 Accessed via `client.email`.
 
@@ -134,7 +134,7 @@ send: function(params);
 
 ### Email Templates
 
-http://developer.pardot.com/kb/api-version-3/email-templates/
+http://developer.pardot.com/kb/api-version-4/email-templates/
 
 Accessed via `client.emailTemplates`.
 
@@ -146,7 +146,7 @@ listOneToOne: function();
 
 ### Forms
 
-http://developer.pardot.com/kb/api-version-3/forms/
+http://developer.pardot.com/kb/api-version-4/forms/
 
 Accessed via `client.forms`.
 
@@ -158,7 +158,7 @@ read: function(id);
 
 ### Lifecycle Histories
 
-http://developer.pardot.com/kb/api-version-3/lifecycle-histories/
+http://developer.pardot.com/kb/api-version-4/lifecycle-histories/
 
 Accessed via `client.lifecycleHistories`.
 
@@ -170,7 +170,7 @@ read: function(id);
 
 ### Lifecycle Stages
 
-http://developer.pardot.com/kb/api-version-3/lifecycle-stages/
+http://developer.pardot.com/kb/api-version-4/lifecycle-stages/
 
 Accessed via `client.lifecycleStages`.
 
@@ -182,7 +182,7 @@ read: function(id);
 
 ### Lists
 
-http://developer.pardot.com/kb/api-version-3/lists/
+http://developer.pardot.com/kb/api-version-4/lists/
 
 Accessed via `client.lists`.
 
@@ -197,7 +197,7 @@ delete: function(id);
 
 ### List Memberships
 
-http://developer.pardot.com/kb/api-version-3/list-memberships/
+http://developer.pardot.com/kb/api-version-4/list-memberships/
 
 Accessed via `client.listMemberships`.
 
@@ -214,7 +214,7 @@ deleteByListIdAndProspectId: function(listId, prospectId)
 
 ### Opportunities
 
-http://developer.pardot.com/kb/api-version-3/opportunities/
+http://developer.pardot.com/kb/api-version-4/opportunities/
 
 Accessed via `client.opportunities`.
 
@@ -230,7 +230,7 @@ undelete: function(id);
 
 ### Prospects
 
-http://developer.pardot.com/kb/api-version-3/prospects/
+http://developer.pardot.com/kb/api-version-4/prospects/
 
 Accessed via `client.prospects`.
 
@@ -254,7 +254,7 @@ deleteByEmail: function(email);
 
 ### Prospect Accounts
 
-http://developer.pardot.com/kb/api-version-3/prospect-accounts/
+http://developer.pardot.com/kb/api-version-4/prospect-accounts/
 
 Accessed via `client.opportunities`.
 
@@ -269,7 +269,7 @@ update: function(id, params);
 
 ### Tags
 
-http://developer.pardot.com/kb/api-version-3/tags/
+http://developer.pardot.com/kb/api-version-4/tags/
 
 Accessed via `client.tags`.
 
@@ -281,7 +281,7 @@ read: function(id);
 
 ### Tag Objects
 
-http://developer.pardot.com/kb/api-version-3/tag-objects/
+http://developer.pardot.com/kb/api-version-4/tag-objects/
 
 Accessed via `client.tagObjects`.
 
@@ -294,7 +294,7 @@ removed: function(id);
 
 ### Users
 
-http://developer.pardot.com/kb/api-version-3/users/
+http://developer.pardot.com/kb/api-version-4/users/
 
 Accessed via `client.users`.
 
@@ -307,7 +307,7 @@ readById: function(id);
 
 ### Visitors
 
-http://developer.pardot.com/kb/api-version-3/visitors/
+http://developer.pardot.com/kb/api-version-4/visitors/
 
 Accessed via `client.visitors`.
 
@@ -320,7 +320,7 @@ read: function(id);
 
 ### Visitor Activities
 
-http://developer.pardot.com/kb/api-version-3/visitor-activities/
+http://developer.pardot.com/kb/api-version-4/visitor-activities/
 
 Accessed via `client.visitorActivities`.
 
@@ -332,7 +332,7 @@ read: function(id);
 
 ### Visits
 
-http://developer.pardot.com/kb/api-version-3/visits/
+http://developer.pardot.com/kb/api-version-4/visits/
 
 Accessed via `client.visits`.
 
