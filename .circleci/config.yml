@@ -1,6 +1,3 @@
 test:
   pre:
     - npm run lint
-test:
-  pre:
-    - npm run lint
