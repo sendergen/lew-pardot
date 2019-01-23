@@ -6,22 +6,24 @@ defaults: &defaults
     - image: circleci/node:8.9.1
 
 jobs:
-  build:
+  test:
     <<: *defaults  
     steps:
       - checkout
       - restore_cache: 
-          key: dependency-cache-{{ checksum "package.json" }}
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
       - run:
           name: install-npm
           command: npm install
-      - save_cache: # special step to save the dependency cache
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
       - run:
           name: test
           command: npm run lint
+      - save_cache: # special step to save the dependency cache
+          paths:
+            - ./node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
       - persist_to_workspace:
           root: ~/repo
           paths: .
@@ -32,8 +34,25 @@ jobs:
           at: ~/repo
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$npmToken" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - run:
           name: Publish package
           command: npm publish
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - test:
+          filters:
+            tags:
+              only: /^v.*/
+      - deploy:
+          requires:
+            - test
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+
             
