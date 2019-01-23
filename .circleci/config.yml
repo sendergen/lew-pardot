@@ -1,7 +1,9 @@
 version: 2
 jobs:
   build:
-    machine: 
+    # ...
     steps:
-      - checkout # check out the code in the project directory
-      - run: npm run lint
+      - checkout  # checkout source code to working directory
+      - run:
+          command: |  # use pipenv to install dependencies
+            npm run lint
