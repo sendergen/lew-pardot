@@ -1,6 +1,6 @@
 {
   "name": "lew-pardot",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "description": "A pardot API client forked from micahlmartin/pardot",
   "main": "index.js",
   "scripts": {
