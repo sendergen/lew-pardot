@@ -1,4 +1,4 @@
-var Code    = require('code');
+var Code    = require('@hapi/code');
 var expect  = Code.expect;
 var Lab     = require('@hapi/lab');
 var lab     = exports.lab = Lab.script();
